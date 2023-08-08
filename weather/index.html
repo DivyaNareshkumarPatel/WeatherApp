@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Application">
+    <meta name="keywords" content="Weather, Temperature">
+    <meta name="author" content="Divya Patel">
+    <title>Temperature Application</title>
+    <link rel="icon" href="or8p_x9vz_210701.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+    <script src="https://kit.fontawesome.com/b49db04606.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="block1">
+        <div class="nav">
+            <div class="date">
+                <div class="month">-- --</div>
+                <div class="day">--, --, --</div>
+                <div class="time">--</div>
+            </div>
+            <div class="searchBar">
+                <form action="">
+                    <input type="search" placeholder="Search location here" id="search">
+                </form>
+            </div>
+        </div>
+        <hr style="background-color: rgb(237, 236, 236); border: none; height: 1px;">
+        <div class="overview">
+            <h3 class="place">Delhi, IN</h3>
+            <div class="blocks">
+                <div class="innerblock">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-temperature-half fa-xl"></i></div>
+                    </div>
+                    <div>
+                        <div class="name">Temperature</div>
+                        <div class="temprature data">--°C</div>
+                    </div>
+                </div>
+                <div class="innerblock">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-wind fa-xl"></i></div>
+                    </div>
+                    <div>
+                        <div class="name">Wind Speed</div>
+                        <div class="windspeed data">--km/hr</div>
+                    </div>
+                </div>
+                <div class="innerblock">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-water fa-xl"></i></div>
+                    </div>
+                    <div>
+                        <div class="name">Pressure</div>
+                        <div class="pressure data">--hpa</div>
+                    </div>
+                </div>
+                <div class="innerblock">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-temperature-high fa-xl"></i></div>
+                    </div>
+                    <div>
+                        <div class="name">Feels like</div>
+                        <div class="data feel">--°C</div>
+                    </div>
+                </div>
+                <div class="innerblock">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-wind fa-xl"></i></div>
+                    </div>
+                    <div>
+                        <div class="name">Wind Degree</div>
+                        <div class="winddeg data">--</div>
+                    </div>
+                </div>
+                <div class="innerblock">
+                    <div>
+                        <div class="icon"><i class="fa-regular fa-eye fa-xl"></i></div>
+                    </div>
+                    <div>
+                        <div class="name">Visibility</div>
+                        <div class="visible data">--m</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="graph">
+            <div class="graph">
+                <div class="head">
+                    <div class="average">Major city Temprature</div>
+                </div>
+            </div>
+            <div class="innerGraph">
+                <canvas id="charttemp" width="600px" height="300px"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="block2">
+        <div class="headBlock21">
+            <div class="place placewhite">Delhi, IN</div>
+            <div class="whiteTime">--</div>
+        </div>
+        <div class="temphead">
+            <div class="tempimg"><img src="https://openweathermap.org/img/wn/04n@2x.png" alt="" srcset=""></div>
+            <div class="temprature">
+                <div class="tempbody">--°C</div>
+                <div class="tempname">----</div>
+            </div>
+        </div>
+        <hr>
+        <div class="content">
+            <div class="rain">
+                <div class="chancerain">Cloud Cover</div>
+                <div class="rainpercentage" id="cloud">--%</div>
+            </div>
+            <div class="rain">
+                <div class="chancerain">Min Temprature</div>
+                <div class="rainpercentage" id="min">--°C</div>
+            </div>
+            <div class="rain">
+                <div class="chancerain">Max Temperature</div>
+                <div class="rainpercentage" id="max">--°C</div>
+            </div>
+            <div class="rain">
+                <div class="chancerain">Humidity</div>
+                <div class="rainpercentage" id="humid">--%</div>
+            </div>
+        </div>
+        <div class="sun">
+            <div class="head">Sunset and Sunrise</div>
+            <div class="sunrise">
+                <div class="icon"><i class="fa-regular fa-sun fa-xl"></i></div>
+                <div>
+                    <div class="sunhead">Sunrise</div>
+                    <div class="sunbody sunrisebody">--</div>
+                </div>
+            </div>
+            <div class="sunrise">
+                <div class="icon"><i class="fa-regular fa-moon fa-xl"></i></div>
+                <div>
+                    <div class="sunhead">Sunset</div>
+                    <div class="sunbody sunsetbody">--</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icontop"><i class="fa-solid fa-angle-left fa-lg"></i></div>
+</body>
+
+</html>
